@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from .models import Task
+from .serializers import TaskSerializer
 
-# Create your views here.
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.authentication import BasicAuthentication
